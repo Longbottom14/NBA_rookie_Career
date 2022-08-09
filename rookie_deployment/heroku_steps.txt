@@ -1,0 +1,43 @@
+##bash kernel
+
+create Procfile
+>> touch Procfile
+
+#inside Procfile
+"web: gunicorn predict:app" 
+#the flask app is inside predict.py i.e app = Flask(__name__)
+#make sure app.run() is inside "if __name__ == '__main__'" block
+
+
+#create a git local repo
+>>git status
+
+#add files to staging area
+>>git add .
+
+#commit
+>>git commit -m 'first commit'
+
+#login to heroku
+>>heroku login
+
+#login on the web
+
+#create app
+>>heroku create
+
+#rename app name 
+>> heroku rename "new_app_name"
+
+#push file to heroku cloud
+#git push heroku master
+
+#if there is no error 
+#lucky me 
+
+#if error 
+#check logs
+>> heroku logs --tail
+
+
+
